@@ -1,0 +1,154 @@
+.downloader {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  text-align: left;
+}
+
+.subtitle {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.warning {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: #d33;
+  margin-top: 12px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.controls input[type='url'] {
+  flex: 1 1 320px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 16px;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.thread-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+.thread-control input[type='number'] {
+  width: 64px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.controls button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--accent-border);
+  background: var(--accent);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.controls button.cancel {
+  background: transparent;
+  color: var(--text-h);
+  border-color: var(--border);
+}
+
+.status {
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.file-info {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.progress-section {
+  margin-top: 24px;
+}
+
+.overall-bar {
+  height: 14px;
+  border-radius: 7px;
+  background: var(--code-bg);
+  overflow: hidden;
+}
+
+.overall-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.2s ease;
+}
+
+.overall-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--text);
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.chunk-grid {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.chunk-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chunk-label {
+  width: 36px;
+  font-size: 12px;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.chunk-bar {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--code-bg);
+  overflow: hidden;
+}
+
+.chunk-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.2s ease;
+}
